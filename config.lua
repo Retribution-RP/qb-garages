@@ -4,7 +4,7 @@ Config.SharedGarages = false   --True == Gang and job garages are shared, false 
 Config.VisuallyDamageCars = true --True == Visually damage cars that go out of the garage depending of body damage, false == Do not visually damage cars (damage is still applied to car values)
 
 Config.Garages = {
-    ["motelgarage"] = {
+--[[     ["motelgarage"] = {
         ["label"] = "Motel Parking",
         ["takeVehicle"] = vector3(273.43, -343.99, 44.91),
         ["spawnPoint"] = vector4(270.94, -342.96, 43.97, 161.5),
@@ -184,7 +184,7 @@ Config.Garages = {
         ["type"] = "public",                --public, job, gang, depot
         ["vehicle"] = "car"                 --car, air, sea, rig
     },
-    --[[    ["hayesdepot"] = {
+ ]]    --[[    ["hayesdepot"] = {
         ["label"] = "Hayes Depot",
         ["takeVehicle"] = vector3(491.0, -1314.69, 29.25),
         ["spawnPoint"] = vector4(491.0, -1314.69, 29.25, 304.5),
@@ -195,7 +195,7 @@ Config.Garages = {
         ["type"] = "depot",                --public, job, gang, depot
         ["vehicle"] = "car"                 --car, air, sea, rig
     }, --]]
-    ["impoundlot"] = {
+--[[     ["impoundlot"] = {
         ["label"] = "Impound Lot",
         ["takeVehicle"] = vector3(409.89, -1623.51, 29.29),
         ["spawnPoint"] = vector4(407.92, -1646.29, 29.29, 226.39),
@@ -262,7 +262,8 @@ Config.Garages = {
         ["job"] = "cartel",
         ["jobType"] = "cartel"
     },
-    ["police"] = {
+ ]]    
+        ["police"] = {
         ["label"] = "Police",
         ["takeVehicle"] = vector3(454.6, -1017.4, 28.4),
         ["spawnPoint"] = vector4(438.4, -1018.3, 27.7, 90.0),
@@ -276,7 +277,21 @@ Config.Garages = {
         ["job"] = "police",
         ["jobType"] = "leo"
     },
-    ["intairport"] = {
+    ["Pillbox"] = {
+        ["label"] = "Pillbox",
+        ["takeVehicle"] = vector3(335.13, -588.65, 28.8),
+        ["spawnPoint"] = vector4(334.09, -572.47, 28.52, 341.17),
+        ["putVehicle"] = vector3(318.21, -579.11, 28.52),
+        ["showBlip"] = false,
+        ["blipName"] = "Pillbox",
+        ["blipNumber"] = 357,
+        ["blipColor"] = 3,
+        ["type"] = "job",                --public, job, gang, depot
+        ["vehicle"] = "car",              --car, air, sea, rig
+        ["job"] = "ambulance",
+        ["jobType"] = "leo"
+    },
+--[[     ["intairport"] = {
         ["label"] = "Airport Hangar",
         ["takeVehicle"] = vector3(-1025.92, -3017.86, 13.95),
         ["spawnPoint"] = vector4(-979.2, -2995.51, 13.95, 52.19),
@@ -440,6 +455,6 @@ Config.Garages = {
         ["blipColor"] = 2,
         ["type"] = "public",                --public, job, gang, depot
         ["vehicle"] = "rig"                 --car, air, sea, rig
-    },
+ ]]   -- },
 }
 Config.HouseGarages = {}
